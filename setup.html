@@ -1,0 +1,33 @@
+
+<!DOCTYPE HTML><html>
+<head>
+  <title>ESP32 Control</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
+</head>
+<body>
+ 
+  <div class="jog">  <button class="button " ontouchstart="buttonDown(1)" ontouchend="buttonUp(1)" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Jog Clockwise</button>
+    <button class="button" ontouchstart="buttonDown(2)" ontouchend="buttonUp(2)" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Jog Counter-Clockwise</button>
+    <button class="button"    ontouchend="increaseSpeed()"  style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Increase Speed</button>
+    <button  class="button"   ontouchend="decreaseSpeed()"  style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Decrease Speed</button> 
+
+    <!-- <button  onmousedown="increase_range()" onmouseup="increaseSpeed()"  ontouchstart="increaseSpeed()" ontouchend="increaseSpeed()" onclick="increaseSpeed()" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Increase Speed</button>
+    <button onmousedown="decreaseSpeed()" onmouseup="decreaseSpeed()"  ontouchstart="decreaseSpeed()" ontouchend="decreaseSpeed()" onclick="decreaseSpeed()" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Decrease Speed</button> -->
+    <!-- <input type="number"  placeholder="Start Position"> -->
+    <button class="button" onclick="storeStartPos()" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Store Start Position</button>
+    <!-- <input type="number" id="stopPos" placeholder="Stop Position"> -->
+    <button class ="button" onclick="storeStopPos()" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Store Stop Position</button>
+    <!-- <input type="number" id="speed" placeholder="Speed"> -->
+    <button class ="button" onclick="storeSpeed()"style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Store Speed</button>
+    <!-- <input type="number" id="count" placeholder="Count"> -->
+    <button class= "button" onclick="storeCount()" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Store Count</button>
+    <button class= "button" onclick="startSession()" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">Start Session</button>
+    <button class= "button" onclick="stopSession()">Stop Session</button>
+    
+    <button class="button"><a href="Connect_to_internet.html">wifi</a></button></div>
+
+    
+  </body>
+  </html>
